@@ -67,5 +67,5 @@ Aggregate the results of the HIIT
 Aggregation: The Winning Couplet is Appended to the Poem: We will then aggregate the results from the 5th HIIT, and choose the coupley with the highest number of votes. This couplet will be appended to our sonnet. We now have a fully finished sonnet using the power of the crowd!
 
 Milestones:
-Aggregate results from previous HIIT and choose couplet with highest votes
-Append couplet to sonnet
+- Aggregate results from previous HIIT and choose couplet with highest votes
+- Append couplet to sonnet
