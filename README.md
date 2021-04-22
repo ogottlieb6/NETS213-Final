@@ -75,102 +75,7 @@ STEP 1: Gather any materials that you need to start
 4/22/2021 
 Format of our Project: 
 
-Your repository must contain a data/ directory. For now, this should contain the following:
-Raw data input that your project requires. If your project needs inputs like Tweets about HPV, pictures of celebrities wearing stylings threads, or psycholinguistic stimuli, then spend time gathering a set of these inputs. You don’t need the whole dataset, but have enough to be able to get a MVP (Minimal Viable Product) of your idea working.
-Keywords for HIT #1  
-Day 
-Night
-time 
-love 
-day
-light
-night
-man
-world
-long
-eyes
-life
-water
-hand
-white
-air
-body
-dark
-face
-dead
-heart
-years
-left
-god
-sky
-sun
-wind 
-Sample Result of Running HIT #1: Selected Keyword by the crowd: “Love”
- 
-
-Eventually you’ll be gathering real data from the crowd. Before that happens you should create fake data that you can use as input for the initial implementation of your modules. Create a data subsection of your README file that describes the format. Ideally the format will be reusable when you get real data from your workers. That way you only have to change your input files, and your algorithms can operate as they did before.
-HIT #2 and #3: 
-Create a 4 line stanza following an alternating rhyme scheme
-Input: “Love” kEYWORKD 
-Run Quality control algorithms on each inputted stanza to count syllables, check for duplicate lines
-Take inputted stanzas and run them through a separate HIT to find most popular quatrain to serve as the first stanza of the sonnet 
-Sample Stanza:
-True love takes shape as a strongest fire,
-In the mind forever burning away,
-Never sick, never dead, never cold or tire,
-I stand to the side; my response is to pray 
-
-HIT #4 and #5: 
-Create a 4 line stanza following an alternating rhyme scheme
-Input: Result from HIT #3 (Aggregated sonnet up till now) 
-Run QC control same as above
-Get stanza that is voted on by a majority of the workers (outputted below)
-Sample Stanza:
-Love oh love why is it needed so much
-Oh life would be simple without love’s pains
-Love oh love it should not be such a sludge
-But I do love thee and I can’t abstain
-
-HIT #6 and #7: 
-Create a 4 line stanza following an alternating rhyme scheme
-Input: Aggregated Result from HIT #3, #5
-Run QC control same as above
-Get stanza that is voted on by a majority of the workers (outputted below)
-Sample Stanza:
-All this pain, still I want her here and now 
-My heart aches for her, my heart calls for her 
-Lest, she is gone, I’m left wondering how
-Memories here that will soon be a blur  
-HIT #8 and #9: 
-Create a 2 line couplet following an alternating rhyme scheme
-Input: Aggregated Result from HIT #3, #5, #7
-Run QC control same as above
-Get couplet that is voted on by a majority of the workers (outputted below)
-Sample Stanza:
-Love oh love is a complicated thing
-But love oh love has a beautiful zing
-
-Final Aggregated Sonet based on all prior HITS: 
-True love takes shape as a strongest fire,
-In the mind forever burning away,
-Never sick, never dead, never cold or tire,
-I stand to the side; my response is to pray 
-
-Love oh love why is it needed so much
-Oh life would be simple without love’s pains
-Love oh love it should not be such a sludge
-But I do love thee and I can’t abstain
-
-All this pain, still I want her here and now 
-My heart aches for her, my heart calls for her 
-Lest, she is gone, I’m left wondering how
-Memories here that will soon be a blur  
-
-Love oh love is a complicated thing
-But love oh love has a beautiful zing
-
 Brief Explanation of Aggregation Process: At each set of HITS, the status of our sonnet changes. At HITS #1 and #2, we input just the keyword, allowing turkers to set the framework for what will become the first quatrain. The most popular quatrain as outputted in HIT #2 is then fed into HIT #3 as how much of the sonnet is currently complete. We continue this iterative process of growing the sonnet until we reach the couplet at which point our sonnet is done. 
-
 
 Sample QC Inputs and Outputs: 
 
@@ -252,4 +157,4 @@ Love oh love it should not be such a sludge
 But I do love thee and I can’t abstain
 
 Reasoning: Input 3 has the highest vote count so our aggregation module will output input 3 and append it to our sonnet.
-
+ 
